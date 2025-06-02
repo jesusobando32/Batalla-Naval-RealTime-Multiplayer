@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es-Ve">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="Santiago Chirinos, Jesus Obando, Sebastian Llambi" />
+    <meta name="description" content="Juego de barcos" />
+    <meta name="keywords" content="guerra" />
+    <link rel="icon" href="//wows-web-static.wgcdn.co/wowsp/890a4e12/images/apple_180.png" type="image/png">
+    <meta name="robots" content="noindex,nofollow" />
+    <title> Battleship 2 Jugadores</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="../scripts/modoDosJugadores.js" type="module"></script>
+    <script src="../scripts/agregarBarcos.js" type="module"></script>
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenidoNavegacion">
+            <div class="icono">
+                <figure>
+                    <a href="index.html">
+                        <img src="/client/images/backgrounds/logo.jpg" alt="icono" height="80px">
+                </figure>
+                </a>
+
+            </div>
+            <div class="navegation">
+                <nav class="buttonav">
+                    <a href="Battleship_reglas.html">Instrucciones</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="contenedor-principal">
+            <h1>BATTLE<span>SHIP</span>| 2 Jugadores</h1>
+            <p>Hora de enfrentarte tu solo contra las flotas enemigas dirigidas por tus archenemigos</p>
+            <p> "Tus Compañeros"</p>
+        </div>
+        <nav class="barra-principal">
+            <ul class="separador navegation">
+                <li><a href="Battleship_multijugador.html">Modo 4 jugadores</a></li>
+                <li><a href="TornedoDefi.html">Torneo</a></li>
+                <li><a href="Index.html">Volver al Menú</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <main>
+            <div class="nombre-jugador">
+                <div class="box">
+                    <form>
+                        <div class="input">
+                            <label for="nombre">Ingrese su nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre aquí">
+                            <button id="boton-ingresar-nombre" type="button">Ingresar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <p>
+            <h2 class="texto-afuera">Barcos</h2>
+            </p>
+            <div class="contenedor-tipos-barcos botones-barco">
+                <button class="boton-barco" type="button" id="portaaviones">Portaaviones</button>
+                <button class="boton-barco" type="button" id="acorazado">Acorazado</button>
+                <button class="boton-barco" type="button" id="crucero">Crucero</button>
+                <button class="boton-barco" type="button" id="submarino">Submarino</button>
+                <button class="boton-barco" type="button" id="destructor">Destructor</button>
+            </div>
+
+            <p>
+            <h2 class="texto-afuera">Orientación del barco</h2>
+            </p>
+            <center>
+                <button class="button-vertical" id="orientacion">Vertical</button>
+            </center>
+
+            <div class="contenedor-tableros">
+                <div id="tableros" class="tableros"></div>
+            </div>
+            <div class="puntos">
+                <p>Puntos de power up:</p>
+                <p id="puntaje">0</p>
+            </div>
+
+            <div class="power-ups">
+                <div class="powerup">
+                    <input type="button" value="Sonar" id="sonar">
+                </div>
+                <div class="powerup">
+                    <input type="button" value="Aviones" id="aviones">
+                </div>
+                <div class="powerup">
+                    <input type="button" value="Mina marina" id="mina">
+                </div>
+                <div class="powerup">
+                    <input type="button" value="Escudo" id="escudo">
+                </div>
+                <div class="powerup">
+                    <input type="button" value="Misil" id="misil">
+                </div>
+                <div class="powerup">
+                    <input type="button" value="Reparacion" id="reparacion">
+                </div>
+                <div class="powerup">
+                    <input type="button" value="Ataque PEM" id="EMP">
+                </div>
+            </div>
+            <div class="Campos-rellenar input">
+                <form>
+                    <input type="text" id="game-id" class="server-operation" placeholder="ID del juego" />
+                    <input type="text" id="move-power-up" class="server-operation"
+                        placeholder="Casilla power up (p. ej. A1)" />
+                </form>
+            </div>
+            <div class="botones-juego-menu">
+                <button id="create-game" class="server-operation">Crear un nuevo juego</button>
+                <button id="join-game" class="server-operation">Unirse a un juego existente</button>
+                <button id="start-game" class="server-operation">¡Iniciar la partida!</button>
+                <button id="leave-game" class="server-operation">¡Abandonar la partida!</button>
+                <button id="close-connection" class="client-operation">Cerrar la conexión con el servidor</button>
+
+            </div>
+
+        </main>
+        <footer>
+            <p>Gracias por jugar!</p>
+        </footer>
+    </div>
+</body>

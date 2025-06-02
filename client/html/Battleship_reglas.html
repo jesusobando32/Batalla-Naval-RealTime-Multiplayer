@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es-Ve">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Santiago Chirinos">
+    <meta name="description" content="Juego de barcos">
+    <meta name="keywords" content="guerra">
+    <link rel="icon" href="//wows-web-static.wgcdn.co/wowsp/890a4e12/images/apple_180.png" type="image/png">
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta name="robots" content="../css/noindex,nofollow">
+    <title>Battleship || Reglas</title>
+
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenidoNavegacion">
+            <div class="icono">
+                <figure>
+                    <a href="Battleship.html">
+                        <img src="/client/images/backgrounds/logo.jpg" alt="icono" height="80px">
+                </figure>
+                </a>
+            </div>
+            <div class="navegation">
+                <nav class="buttonav">
+                    <a href="Battleship.html">Ir al modo 2 Jugadores</a>
+                    <a href="Battleship_multijugador.html">Ir al modo 4 Jugadores</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="contenedor-principal">
+            <h1>INSTRUCCIONES</h1>
+            <p>Aqui aprenderás lo basico sobre como jugar a Batalla Naval.</p>
+            <nav class="buttonav cont1">
+                <a href="#reglas-basicas">Reglas Básicas</a>
+                <a href="#power-ups">Power Ups</a>
+                <a href="#multijugador">Modo 4 jugadores</a>
+            </nav>
+        </div>
+    </header>
+    <div class="main-container">
+
+        <main>
+            <div class="separador"></div>
+            <section class="seccion-reglas-basicas">
+
+                <center>
+                    <h1 id="reglas-basicas" class="texto-afuera">Reglas Básicas</h1>
+                </center>
+                <div class="box">
+                    <h3>Objetivo</h3>
+                    <p>El objetivo del juego es hundir toda la flota del enemigo.</p>
+                </div>
+                <p></p>
+                <div class="grid">
+                    <div class="box">
+                        <h3>Componente:</h3>
+                        <h4>Tablero</h4>
+                        <p>Tablero de juego para cada jugador (10x10 cuadrículas). Se debe mostrar el tablero del propio
+                            jugador, donde se muestran la colocación dada a los barcos por parte de dicho jugador, y
+                            otra cuadrícula que representa el espacio donde el contrincante distribuyó sus barcos, y en
+                            donde se mostrarán los tiros fallidos o acertados a medida que avanza el juego.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Componente:</h3>
+                        <h4>Flota</h4>
+                        <ul>
+                            <li>1 portaaviones (abarca 5 casillas, ya sea en sentido horizontal o vertical).</li>
+                            <li>1 acorazado (4 casillas, ya sea en sentido horizontal o vertical).</li>
+                            <li>1 crucero (3 casillas, ya sea en sentido horizontal o vertical).</li>
+                            <li>1 submarino (3 casillas, ya sea en sentido horizontal o vertical).</li>
+                            <li>1 destructor (2 casillas, ya sea en sentido horizontal o vertical).</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h3>Preparación</h3>
+                        <ol>
+                            <li>Cada jugador coloca sus barcos en el tablero de manera oculta al oponente.</li>
+                            <li>Los barcos pueden colocarse vertical u horizontalmente.</li>
+                            <li>Los barcos no pueden superponerse.</li>
+                        </ol>
+                    </div>
+                    <div class="box">
+                        <h3>Turnos</h3>
+                        <ul>
+                            <li>Los jugadores se turnan para "disparar" a las casillas del oponente, intentando adivinar
+                                la posición de los barcos enemigos.</li>
+                            <li>Cada disparo se indica seleccionando una casilla en el tablero del oponente.</li>
+                            <li>El jugador a quien le corresponderá "disparar" por primera vez (primer turno) será
+                                seleccionado al azar.</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h3>Impactos</h3>
+                        <ul>
+                            <li>Si un jugador acierta un disparo en una casilla que contiene parte de un barco enemigo,
+                                se marca un "impacto" (hit).</li>
+                            <li>Si el disparo no acierta en ningún barco, se marca un "fallo" (miss).</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h3>Hundimiento</h3>
+                        <ul>
+                            <li>Cuando todas las casillas de un barco han sido impactadas, el barco se considera
+                                "hundido".</li>
+                            <li>Se debe informar al oponente qué barco ha sido hundido.</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h3>Victoria/Derrota</h3>
+                        <p>Si se logra hundir toda la flota del enemigo, se gana la partida. Por otro lado, si el
+                            enemigo logra hundir toda tu flota, serás derrotado.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Duración del turno</h3>
+                        <ul>
+                            <li>Cada turno tendra una duración máxima de 1 minuto (60 segundos)</li>
+                            <li>Si no se realiza un movimiento en dentro del límite de tiempo, se perderá el turno</li>
+                        </ul>
+                    </div>
+                </div>
+    </div>
+
+    </section>
+    <section id="seccion-power-ups">
+        <center>
+            <h1 id="power-ups" class="texto-afuera">Power-Ups</h1>
+        </center>
+        <strong>
+            <p class="texto-afuera">En esta versión del juego los jugadores podran utilizar habilidades especiales o
+                "Power-Ups" a lo largo de una partida.</p>
+
+            <center>
+                <p class="texto-afuera">Los power ups son:</p>
+            </center>
+        </strong>
+        <div class="grid">
+            <div class="box">
+                <h3>1. Sonar</h3>
+                <ul>
+                    <li>Disponible mientras el submarino no haya sido hundido.</li>
+                    <li>Revela una casilla al azar de un barco enemigo.</li>
+                    <li>Costo: 5 puntos por uso.</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>2. Aviones de ataque</h3>
+                <ul>
+                    <li>Disponible mientras el Portaaviones no haya sido hundido.</li>
+                    <li>Lanza hasta 5 misiles al azar en el tablero enemigo.</li>
+                    <li>Costo: 10 puntos por uso.</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>3. Mina marina</h3>
+                <ul>
+                    <li>Los jugadores pueden plantar una mina en su propio tablero.</li>
+                    <li>Si el enemigo ataca una mina, recibe un "hit" adicional en una casilla adyacente al azar.</li>
+                    <li>Costo: 5 puntos para plantar.</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>4. Escudo defensivo</h3>
+                <ul>
+                    <li>Protege una región de 3x3 casillas durante 3 turnos.</li>
+                    <li>Los ataques en el área protegida son anulados y el enemigo recibe un mensaje de "Bloqueado".
+                    </li>
+                    <li>Costo: 15 puntos.</li>
+                    <li>Un solo uso por partida.</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>5. Misil crucero</h3>
+                <ul>
+                    <li>Ataque dirigido a un área de 3x3 casillas.</li>
+                    <li>Costo: 15 puntos.</li>
+                    <li>Tiempo de recarga: 5 turnos.</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>6. Reparación rápida</h3>
+                <ul>
+                    <li>Restaura hasta 2 casillas de un barco dañado (no hundido).</li>
+                    <li>Costo: 10 puntos.</li>
+                    <li>Un solo uso por barco.</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>7. Ataque EMP</h3>
+                <ul>
+                    <li>Desactiva todas las funciones especiales del enemigo durante 3 turnos.</li>
+                    <li>Costo: 25 puntos.</li>
+                    <li>Tiempo de recarga: 10 turnos.</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section id="seccion-multijugador">
+        <center>
+            <h1 id="multijugador" class="texto-afuera">Modo 4 jugadores</h1>
+        </center>
+        <strong>
+            <p class="texto-afuera">El juego puede ser jugado en partida contra un solo rival en el modo partida rápida
+                mientras que en el modo de 4 jugadores podrás jugas con más personas con reglas ligeramente cambiadas.
+            </p>
+        </strong>
+        <div class="grid">
+            <div class="box">
+
+                <h3>1. Formato de juego</h3>
+                <ul>
+                    <li>Cada jugador tendrá su propio tablero y flota de barcos.</li>
+                    <li>Los jugadores tomarán turnos de manera secuencial. El orden de los turnos (quién dispara primero
+                        y quiénes continúan uno después del otro) se debe establecer al azar, antes de iniciar el juego.
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+
+                <h3>2. Turnos</h3>
+                <ul>
+                    <li>Los turnos se gestionarán en un orden circular: jugador 1, jugador 2, jugador 3, jugador 4, y
+                        así sucesivamente.</li>
+                    <li>Cada jugador dispara a una casilla en el tablero de uno de los oponentes durante su turno. Esto
+                        quiere decir, que, en un turno, un jugador sólo puede atacar a un único contrincante.</li>
+                    <li>Un jugador no puede disparar a su propio tablero.</li>
+                </ul>
+            </div>
+            <div class="box">
+
+                <h3>3. Impactos y hundimientos</h3>
+                <ul>
+                    <li>Las reglas de impacto y hundimiento se mantienen iguales.</li>
+                    <li>El sistema debe informar a todos los jugadores cuando un barco ha sido hundido.</li>
+                </ul>
+            </div>
+            <div class="box">
+
+                <h3>4. Victoria</h3>
+                <ul>
+                    <li>El juego continúa hasta que solo quede un jugador con barcos sin hundir.</li>
+                    <li>El último jugador en tener barcos en su tablero es el ganador.</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <center>
+            <h1 class="texto-afuera">Jugar Battleship</h1>
+            <nav class="secundario" aria-label="secundario">
+                <ul>
+                    <nav class="buttonav cont1">
+                        <a href="Battleship.html">Jugar con 2 Jugadores</a>
+                        <a href="Battleship_multijugador.html">Jugar con 4 Jugadores</a>
+                        <a href="#reglas-basicas">Volver arriba</a>
+                    </nav>
+                </ul>
+            </nav>
+        </center>
+    </footer>
+    </main>
+    </div>
+</body>
+
+</html>
