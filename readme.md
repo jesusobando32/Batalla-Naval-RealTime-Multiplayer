@@ -4,9 +4,13 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Deno](https://img.shields.io/badge/Deno-000000?style=for-the-badge&logo=deno&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socket.io&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge)
 
 Una reinterpretación moderna e interactiva del clásico juego de estrategia **Batalla Naval**. Desarrollado con una arquitectura cliente-servidor orientada a eventos, permitiendo partidas multijugador en tiempo real mediante **WebSockets** y el entorno de ejecución **Deno**.
+
+## 👥 Equipo y mi rol
+
+Proyecto en equipo de la UCAB. Trabajé en todas las partes del proyecto: la interfaz, la lógica del juego y la comunicación en tiempo real.
 
 ## 📸 Vistas del Proyecto
 
@@ -38,7 +42,8 @@ Una reinterpretación moderna e interactiva del clásico juego de estrategia **B
 ### Ejecución Local
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/Battleship-WEB.git
+   git clone https://github.com/jesusobando32/Batalla-Naval-RealTime-Multiplayer.git
+   cd Batalla-Naval-RealTime-Multiplayer
    ```
 2. Inicia el servidor WebSocket con Deno:
    ```bash
